@@ -1,0 +1,29 @@
+﻿<Window x:Class="FirstWPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApplication"
+        mc:Ignorable="d"
+        Title="My First WPF Application!" Height="460" Width="667">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF262FF1"/>
+            <GradientStop Color="#FFFB3232" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,10,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="402*"/>
+            <ColumnDefinition Width="238*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="269,52,0,0" VerticalAlignment="Top" Background="{x:Null}" MouseEnter="Button_MouseEnter" Foreground="White" Grid.Column="1"/>
+        <TextBox x:Name="txtDOB" HorizontalAlignment="Left" Margin="106,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="lblDOB" Content="Birthday:" HorizontalAlignment="Left" Margin="50,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.81,-0.014" Foreground="White" Grid.Column="1"/>
+        <Label x:Name="lblOutput" Content="Label" HorizontalAlignment="Left" Margin="65,108,0,0" VerticalAlignment="Top" Height="57" Width="501" Foreground="White" FontSize="18" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="59,32,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.634,0.998" Grid.Column="1"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="106,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+
+    </Grid>
+</Window>
